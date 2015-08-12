@@ -1,5 +1,5 @@
 # gtk-sample-app-python
-Sample application for Gtk with Python, Glade, GIntrospaction, and cx_freeze
+Sample application for Gtk with Python, Glade, PyGobject, and CX Freeze
 
 <i>Tutorial for Windows</i>
 
