@@ -12,11 +12,9 @@ Install PyGobject pygi-aio-3.14.0_rev19-setup.exe (aka PyGI)
 
 from http://sourceforge.net/projects/pygobjectwin32/files/
 
-You must install Gtk with the installer (checkbox Gtk-...).
+You must install Gtk with the PyGi installer (checkbox Gtk-...).
 
-
-    C:\PythonXX\Scripts\
-
+It will be installed under C:\PythonXX\Lib\site-packages\gnome 
 
 You may now test gtk_simple.py or gtk_builder.py with the python command line
 
