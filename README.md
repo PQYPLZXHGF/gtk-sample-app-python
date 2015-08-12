@@ -12,8 +12,8 @@ For example, under  C:\PythonXX where XX is the version number
 Install PyGobject pygi-aio-3.14.0_rev19-setup.exe (aka PyGI)
 from http://sourceforge.net/projects/pygobjectwin32/files/
 
-You must install Gtk with the installer (check Gtk).
-Gtk will be installed under your previously Python path, in the subdirectory Script
+You must install Gtk with the installer (checkbox Gtk-...).
+Gtk will be installed under your Python path, in the Script subdirectory
 
 <pre>
 C:\PythonXX\Scripts\
@@ -26,13 +26,13 @@ You may now test gtk_simple.py or gtk_builder.py with the python command line
 # Setup Script GTK
 
 A cx freeze setup script is a python file that list source files and
-dependancies for the final stanalone, sortof like a CMake or Makefile script. 
+dependancies for the final stanalone, sort-of like a CMake or Makefile script. 
 
 There is a setup script on the gnome wiki, but it does not works as-is
 
 https://wiki.gnome.org/Projects/PyGObject?action=AttachFile&do=view&target=setup.py
 
-To constructe the exe, ether gtk_simple.exe or gtk_build.exe, do
+To constructe an exe, gtk_simple.exe or gtk_build.exe, do
 
 <pre> 
 python setup_gtk_simple.py build
