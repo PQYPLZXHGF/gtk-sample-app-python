@@ -9,7 +9,8 @@ For example, under  C:\PythonXX where XX is the version number
 
 #Gtk binding with PyGobject
 
-Install PyGobject (aka PyGI) from https://wiki.gnome.org/Projects/PyGObject
+Install PyGobject pygi-aio-3.14.0_rev19-setup.exe (aka PyGI)
+from http://sourceforge.net/projects/pygobjectwin32/files/
 
 You must install Gtk with the installer (check Gtk).
 Gtk will be installed under your previously Python path, in the subdirectory Script
@@ -27,11 +28,11 @@ You may now test gtk_simple.py or gtk_builder.py with the python command line
 A cx freeze setup script is a python file that list source files and
 dependancies for the final stanalone, sortof like a CMake or Makefile script. 
 
-There is a setup script on the gnome wiki, but it does not works as-is 
+There is a setup script on the gnome wiki, but it does not works as-is
+
 https://wiki.gnome.org/Projects/PyGObject?action=AttachFile&do=view&target=setup.py
 
-
-To constructe the exetutable, ether gtk_simple or gtk_build, do
+To constructe the exe, ether gtk_simple.exe or gtk_build.exe, do
 
 <pre> 
 python setup_gtk_simple.py build
@@ -43,7 +44,7 @@ or
 python setup_gtk_builder.py build
 </pre>
 
-## source 
-site     http://cx-freeze.sourceforge.net/
-doc      http://cx-freeze.readthedocs.org/en/latest/index.html
-see also http://cx-freeze.readthedocs.org/en/latest/distutils.html
+## sources
+site http://cx-freeze.sourceforge.net/
+doc  http://cx-freeze.readthedocs.org/en/latest/index.html
+and  https://wiki.gnome.org/Projects/PyGObject
