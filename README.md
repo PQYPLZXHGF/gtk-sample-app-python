@@ -57,7 +57,7 @@ http://cx-freeze.readthedocs.org/en/latest/index.html
 
 https://wiki.gnome.org/Projects/PyGObject
 
-#Troubleshooting
+#CX-Freeze Troubleshooting
 
 ## dll errors
 
@@ -75,3 +75,7 @@ python in listed before)
 ## Gdk Cannot create screen error
 
 In the cxfreeze setup script,  Make sure 'gi' is in the packages variable
+
+## Squares instead of text (even plain english/latin characters)
+
+Make sure the PyGi's gnome/etc is listed in the include_files variable
