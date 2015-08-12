@@ -1,5 +1,4 @@
-# gtk-sample-app-python
-Sample application for Gtk with Python, Glade, PyGobject, and CX Freeze
+# Sample application for Gtk with Python, Glade, PyGobject, and cx-freeze
 
 <i>Tutorial for Windows</i>
 
@@ -9,12 +8,11 @@ For example, under  C:\PythonXX where XX is the version number
 
 #Gtk binding with PyGobject
 
-<pre>
 Install PyGobject pygi-aio-3.14.0_rev19-setup.exe (aka PyGI)
+
 from http://sourceforge.net/projects/pygobjectwin32/files/
-</pre>
+
 You must install Gtk with the installer (checkbox Gtk-...).
-Gtk will be installed under your Python path, in the Script subdirectory
 
 
     C:\PythonXX\Scripts\
@@ -27,6 +25,8 @@ You may now test gtk_simple.py or gtk_builder.py with the python command line
 ##install it
 
 from http://cx-freeze.sourceforge.net/
+
+cx-freeze will be installed under your Python path, in the Script subdirectory
 
 ## Setup Script GTK
 
