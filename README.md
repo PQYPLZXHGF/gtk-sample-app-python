@@ -32,7 +32,7 @@ A cx freeze setup script is a python file that list source files and
 dependancies for the final stanalone, sort-of like a CMake or Makefile script. 
 
 There is a setup script on the gnome wiki, it does not works as-is for rev19
-but it was a good begining for the setup_gtk_simple and set_gtk_builder scripts
+but it was a good begining for the setup_gtk_simple and setup_gtk_builder scripts
 
 https://wiki.gnome.org/Projects/PyGObject?action=AttachFile&do=view&target=setup.py
 
