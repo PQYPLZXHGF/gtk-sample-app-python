@@ -22,13 +22,13 @@ Gtk will be installed under your Python path, in the Script subdirectory
 
 You may now test gtk_simple.py or gtk_builder.py with the python command line
 
-##Create a standalone executable with CX freeze
+#Create a standalone executable with CX freeze
 
-#install it
+##install it
 
 from http://cx-freeze.sourceforge.net/
 
-# Setup Script GTK
+## Setup Script GTK
 
 A cx freeze setup script is a python file that list source files and
 dependancies for the final stanalone, sort-of like a CMake or Makefile script. 
@@ -49,7 +49,7 @@ or
 python setup_gtk_builder.py build
 </pre>
 
-## sources
+# sources
 <pre>
 site http://cx-freeze.sourceforge.net/
 doc  http://cx-freeze.readthedocs.org/en/latest/index.html
