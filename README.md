@@ -9,19 +9,24 @@ For example, under  C:\PythonXX where XX is the version number
 
 #Gtk binding with PyGobject
 
+<pre>
 Install PyGobject pygi-aio-3.14.0_rev19-setup.exe (aka PyGI)
 from http://sourceforge.net/projects/pygobjectwin32/files/
-
+</pre>
 You must install Gtk with the installer (checkbox Gtk-...).
 Gtk will be installed under your Python path, in the Script subdirectory
 
-<pre>
-C:\PythonXX\Scripts\
-</pre>
+
+    C:\PythonXX\Scripts\
+
 
 You may now test gtk_simple.py or gtk_builder.py with the python command line
 
 ##Create a standalone executable with CX freeze
+
+#install it
+
+from http://cx-freeze.sourceforge.net/
 
 # Setup Script GTK
 
@@ -45,6 +50,8 @@ python setup_gtk_builder.py build
 </pre>
 
 ## sources
+<pre>
 site http://cx-freeze.sourceforge.net/
 doc  http://cx-freeze.readthedocs.org/en/latest/index.html
 and  https://wiki.gnome.org/Projects/PyGObject
+</pre>
