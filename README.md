@@ -74,8 +74,12 @@ python in listed before)
 
 ## Gdk Cannot create screen error
 
-In the cxfreeze setup script,  Make sure 'gi' is in the packages variable
+If you have the following error with the generated exe: 
+
+    (gtk_simple.exe:1296): Gtk-CRITICAL **: gtk_settings_get_for_screen: assertion ' GDK_IS_SCREEN (screen)' failed
+
+In the cxfreeze setup script,  make sure 'gi' is in the `packages` variable
 
 ## Squares instead of text (even plain english/latin characters)
 
-Make sure the PyGi's gnome/etc is listed in the include_files variable
+In the cxfreeze setup script, make sure the PyGi's gnome/etc is listed in the `include_files` variable
