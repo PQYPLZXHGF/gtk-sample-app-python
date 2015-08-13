@@ -39,7 +39,9 @@ https://wiki.gnome.org/Projects/PyGObject?action=AttachFile&do=view&target=setup
 To constructe an exe, gtk_simple.exe or gtk_build.exe, do
 
     python setup_gtk_simple.py build
+
 or
+
     python setup_gtk_builder.py build
 
 
