@@ -38,15 +38,9 @@ https://wiki.gnome.org/Projects/PyGObject?action=AttachFile&do=view&target=setup
 
 To constructe an exe, gtk_simple.exe or gtk_build.exe, do
 
-<pre> 
-python setup_gtk_simple.py build
-</pre>
-
+    python setup_gtk_simple.py build
 or
-
-<pre> 
-python setup_gtk_builder.py build
-</pre>
+    python setup_gtk_builder.py build
 
 
 # sources
@@ -59,11 +53,22 @@ https://wiki.gnome.org/Projects/PyGObject
 
 #CX-Freeze Troubleshooting
 
-## dll errors
+## dll error 'Import Error: DLL load failed: The specified procedure cannot be found'
 
-Make sure all dll are copied from the gnome sudirectory under you Python install
-(if you have ruby installed, or an another gtk installation in your path make sure
-python in listed before)
+Make sure ALL listed dll are copied from the gnome sudirectory under you Python install.
+
+    copying c:\PythonXX\lib\site-packages\gnome\libffi-6.dll -> build\exe.win32-
+X.X\libffi-6.dll
+
+and *NOT*
+
+copying c:\gtk\bin\libffi-6.dll -> build\exe.win32-3.4\libffi-6.dll
+
+If you have ruby installed, or an another gtk installation in your path, the wrong dll may be copyed. 
+
+You can 
+* Edit your PATH variable (bad)
+* Use the PyGi 'Gnome Prompt' which is a Prompt configured with only the path you need  (good)
 
 ## How to know which gtk dll are needed for the standalone exe ?
 
