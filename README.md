@@ -16,7 +16,7 @@ You must install Gtk with the PyGi installer (checkbox Gtk-...).
 
 It will be installed under C:\PythonXX\Lib\site-packages\gnome 
 
-You may now test gtk_simple.py or gtk_builder.py with the python command line
+You may now run `gtk_simple.py` or `gtk_builder.py` with `python gtk_simple.py` or `python gtk_builder.py`
 
 #Create a standalone executable with CX freeze
 
@@ -44,14 +44,12 @@ or
 
     python setup_gtk_builder.py build
 
+## How to know which Gtk DLLs are required for the standalone exe ?
 
-# sources
-
-http://cx-freeze.sourceforge.net/
-
-http://cx-freeze.readthedocs.org/en/latest/index.html
-
-https://wiki.gnome.org/Projects/PyGObject
+* Download an install ListDlls from https://technet.microsoft.com/en-us/sysinternals/bb896656.aspx
+* Launch your gtk python script as you would normaly do `python gtk_simple.py`
+* Meanwhile in an another prompt, use ListDlls with: `ListDlls python.exe > C:\out.log`
+* Ignore listed System DLLs (gdiplus.dll ...)
 
 #CX-Freeze Troubleshooting
 
@@ -71,13 +69,6 @@ You can
 * Edit your PATH variable (bad)
 * Use the PyGi 'Gnome Prompt' which is a Prompt configured with only the path you need  (good)
 
-## How to know which gtk dll are needed for the standalone exe ?
-
-* Download an install ListDlls from https://technet.microsoft.com/en-us/sysinternals/bb896656.aspx
-* Launch your gtk python script as you would normaly do `python gtk_simple.py`
-* Meanwhile in an another prompt, use ListDlls with: `ListDlls python.exe > C:\out.log`
-* Ignore listed System DLLs (gdiplus.dll ...)
-
 ## Gdk Cannot create screen error
 
 If you have the following error with the generated exe: 
@@ -89,3 +80,9 @@ In the cxfreeze setup script,  make sure 'gi' is in the `packages` variable
 ## Squares instead of text (even plain english/latin characters)
 
 In the cxfreeze setup script, make sure the PyGi's gnome/etc is listed in the `include_files` variable
+
+# sources
+
+http://cx-freeze.readthedocs.org/en/latest/index.html
+
+https://wiki.gnome.org/Projects/PyGObject
