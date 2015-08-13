@@ -72,9 +72,9 @@ You can
 ## How to know which gtk dll are needed for the standalone exe ?
 
 * Download an install ListDlls from https://technet.microsoft.com/en-us/sysinternals/bb896656.aspx
-* launch your gtk python script as you would normaly do (eg 'python gtk_simple.py')
-* use ListDlls with: ListDlls python.exe > C:\out.log
-* Ignore listed System dll like GDI
+* Launch your gtk python script as you would normaly do `python gtk_simple.py`
+* Meanwhile in an another prompt, use ListDlls with: `ListDlls python.exe > C:\out.log`
+* Ignore listed System DLLs (gdiplus.dll ...)
 
 ## Gdk Cannot create screen error
 
