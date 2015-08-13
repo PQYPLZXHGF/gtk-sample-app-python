@@ -57,12 +57,11 @@ https://wiki.gnome.org/Projects/PyGObject
 
 Make sure ALL listed dll are copied from the gnome sudirectory under you Python install.
 
-    copying c:\PythonXX\lib\site-packages\gnome\libffi-6.dll -> build\exe.win32-
-X.X\libffi-6.dll
+    copying c:\PythonXX\lib\site-packages\gnome\XXXX.dll -> build\exe.win32-X.X\XXXX.dll
 
 and *NOT*
 
-copying c:\gtk\bin\libffi-6.dll -> build\exe.win32-3.4\libffi-6.dll
+    copying c:\gtk\bin\XXXX.dll -> build\exe.win32-X.X\XXXX.dll
 
 If you have ruby installed, or an another gtk installation in your path, the wrong dll may be copyed. 
 
