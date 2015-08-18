@@ -59,8 +59,8 @@ gnome_subdirs = [
 for gnome_subdir in gnome_subdirs:
     include_files.append((os.path.join(gnome_dir, gnome_subdir), gnome_subdir))
     
-#copy local glade builder directory
-glade_folder = 'glade'
+#copy share directory
+glade_folder = 'share'
 include_files.append((glade_folder, glade_folder))
 
 executables = [Executable('gtk_builder.py', base=base)]
