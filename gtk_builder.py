@@ -1,6 +1,11 @@
-from gi.repository import Gtk
+from gi.repository import Gio, Gtk
 
 class Handler:
+    schema_id = "sampleapp"
+    
+    def __init__(self):
+        self.settings = Gio.Settings.new(self.schema_id)
+    
     def gtk_main_quit(self, *args):
         Gtk.main_quit(*args)
 
@@ -10,10 +15,14 @@ class Handler:
         aboutdialog.hide()
 
     def on_button_load_clicked(self, button):
-        print ('load')
+        message = self.settings.get_string("message");
+        entry_message = builder.get_object("entry_message")
+        entry_message.set_text(message)
             
     def on_button_save_clicked(self, button):
-        print ('save')
+        entry_message = builder.get_object("entry_message")
+        message = entry_message.get_text()
+        self.settings.set_string("message", message)
 
 builder = Gtk.Builder()
 builder.add_from_file("share/sampleapp/sampleapp.glade")
