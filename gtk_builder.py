@@ -9,8 +9,14 @@ class Handler:
         aboutdialog.run()
         aboutdialog.hide()
 
+    def on_button_load_clicked(self, button):
+        print ('load')
+            
+    def on_button_save_clicked(self, button):
+        print ('save')
+
 builder = Gtk.Builder()
-builder.add_from_file("glade/ui.glade")
+builder.add_from_file("share/sampleapp/sampleapp.glade")
 builder.connect_signals(Handler())
 
 window = builder.get_object("window")
