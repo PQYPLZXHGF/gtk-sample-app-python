@@ -58,15 +58,12 @@ gnome_subdirs = [
 ]
 for gnome_subdir in gnome_subdirs:
     include_files.append((os.path.join(gnome_dir, gnome_subdir), gnome_subdir))
-
-for gnome_subdir in gnome_subdirs:
-    include_files.append((os.path.join(gnome_dir, gnome_subdir), gnome_subdir))
     
 #copy share directory
 share_folder = 'share'
 include_files.append((share_folder, share_folder))
 
-executables = [Executable('gtk_builder.py', base=base)]
+executables = [Executable('gtk_net.py', base=base)]
 
 options_build_exe = {
     'include_msvcr': True,
@@ -76,7 +73,7 @@ options_build_exe = {
     'include_files':include_files,
 }
 
-setup(name='GTK BUILDER',
+setup(name='GTK NET',
       version = '1.0',
       description = '',
       options = {"build_exe":options_build_exe},

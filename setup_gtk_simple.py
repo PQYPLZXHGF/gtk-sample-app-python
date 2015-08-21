@@ -58,15 +58,21 @@ gnome_subdirs = [
 for gnome_subdir in gnome_subdirs:
     include_files.append((os.path.join(gnome_dir, gnome_subdir), gnome_subdir))
 
+for gnome_subdir in gnome_subdirs:
+    include_files.append((os.path.join(gnome_dir, gnome_subdir), gnome_subdir))
+    
 executables = [Executable('gtk_simple.py', base=base)]
 
-setup(name='gtk_simple',
+options_build_exe = {
+    'include_msvcr': True,
+    'includes': includes,
+    'excludes': excludes,
+    'packages': packages,
+    'include_files':include_files,
+}
+
+setup(name='GTK SIMPLE',
       version = '1.0',
       description = '',
-      options = {"build_exe": {'includes': includes,
-                               'excludes': excludes,
-                               'packages': packages,
-                               'include_files':include_files,
-                           }
-				},
+      options = {"build_exe":options_build_exe},
       executables = executables)
