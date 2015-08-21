@@ -1,4 +1,4 @@
-from gi.repository import Gio, Gtk
+from gi.repository import Gtk, Gio
 
 class Handler:
     schema_id = "sampleapp"
